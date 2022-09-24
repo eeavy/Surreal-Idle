@@ -4,44 +4,32 @@
 		<meta charset='utf-8'>
 		<title>Surreal Idle</title>
 		<link rel='stylesheet' type='text/css' href='style.css' />
-		<script src='jquery-3.6.0.min.js'></script>
-		<script src='script.js'></script>
+		<script language="JavaScript" type="text/javascript" src='jquery-3.6.0.min.js'></script>
+		<script language="JavaScript" type="text/javascript" src='script.js'></script>
 	</head>
 
-	<body>
-		<div class='sidenav'>
-			<div class="gold"></div>
-			<div>Enemy</div>
-			<div>Town</div>
-		</div>
-		<div class='main'>
-			<div class="town">
-				<div class="resource">
-					<img src="src/wood.png">
-					<div class="wood"></div>
-					<img src="src/stone.png">
-					<div class="stone"></div>
-					<img src="src/clay.png">
-					<div class="clay"></div>
-					<img src="src/men.png">
-					<div class="men"></div>
+<body>
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Town</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+ </div>  
+ <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu
+ </span>
+ 
+ <div id="town">
+  <div class="buildings">
+      <div id="mall" class="building" onClick="canBuild(this.id)"></div>
+  </div>
+ </div>
 
 
-				</div>
-				<div class="buildings">
-					<div class="monument">
-						<img src='src/fireplace.png' >
-						<img src='src/time.png' >
-						<div class="time"></div>
-						<div class="buy"></div>
-					</div>
-				</div>
 
-				<div class="d"></div>
-
-			</div>
-		</div>
 
 	</body>
 
 </html>
+
+
